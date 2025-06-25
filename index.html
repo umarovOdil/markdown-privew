@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Markdown Previewer</title>
+</head>
+<body>
+
+    
+        <h1 class="title">
+            Markdown Previewer
+        </h1>
+        <p class="title2">
+            Preview as you type. Simple & smart.
+        </p>
+
+    
+        <div class="markdown-wrapper">
+    
+            <div class="markdown-textarea">
+                <div class="markdown-container">
+                    <div class="textarea-head">
+                        <p>
+                            Input
+                        </p>
+                        <!-- <button title="Info" class="icon-btn">
+                            <i class="bi bi-book"></i>
+                        </button> -->
+                    </div>
+                    <div class="area-wrapper">
+                        <!-- <label for="story" class="textarea-head">Matn kiriting:</label> -->
+                        <div class="area-box">
+                            <textarea id="story" name="story" rows="5" title="Markdown matnini kiriting"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="markdown-output">
+                <div class="output-head">
+                    <p>
+                        Output
+                    </p>
+                    <div class="download-type-box">
+                        <select class="form-select form-select-sm file-type" aria-label="Select download type">
+                          <option selected value="null">Select download type</option>
+                          <option value="md">md (Markdown)</option>
+                          <option value="html">html (HTML)</option>
+                          <option value="pdf">pdf (PDF)</option>
+                          <option value="txt">txt (Text)</option>
+                        </select>
+                        <button title="Info" class="icon-btn" onclick="downloadFile()">
+                            <i class="bi bi-file-earmark-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="output-box">
+    
+                </div>
+            </div>
+    
+    
+        </div>
+        <div class="footer">
+            <p>
+                Created by <a href="https://github.com/umarovOdil?tab=repositories">Umarjonov Odilbek</a> 
+                with 
+                <a href="https://www.npmjs.com/package/markdown">markdown-js</a>
+            </p>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>
